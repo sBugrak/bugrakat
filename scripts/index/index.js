@@ -1,9 +1,12 @@
+// Global function to load content
 async function loadContent(contentName) {
     try {
         const response = await fetch(`components/index/${contentName}.php`);
         const content = await response.text();
         document.getElementById('content').innerHTML = content;
-
+        // Save the last loaded component
+        localStorage.setItem('lastLoadedComponent', contentName);
+        // Close the hamburger menu after loading content
         document.getElementById('menu-toggle').checked = false;
     } catch (error) {
         console.error('Error loading content:', error);
@@ -15,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.getElementById('content');
     const title = document.querySelector('.title');
     const menuToggle = document.getElementById('menu-toggle');
+    
     // Function to load startup content
     async function loadStartupContent() {
         try {
@@ -28,13 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Load startup content on page load
-    loadStartupContent();
+    // Check if there's a last loaded component
+    const lastLoadedComponent = localStorage.getItem('lastLoadedComponent');
+    if (lastLoadedComponent) {
+        loadContent(lastLoadedComponent);
+    } else {
+        // Load startup content if no component was previously loaded
+        loadStartupContent();
+    }
 
     // Load startup content when title is clicked
     title.addEventListener('click', function(e) {
         e.preventDefault();
         loadStartupContent();
+        // Clear the last loaded component when clicking the title
+        localStorage.removeItem('lastLoadedComponent');
         // Close the hamburger menu when title is clicked
         menuToggle.checked = false;
     });
@@ -47,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             menuToggle.checked = false;
         });
     });
-    
 });
 
 document.addEventListener('click', function(event) {

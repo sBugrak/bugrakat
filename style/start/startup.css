@@ -9,7 +9,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    color: var(--color-muted);
+    color: var(--color-background);
 }
 
 .intro-articles {
