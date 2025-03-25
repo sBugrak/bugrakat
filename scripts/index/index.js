@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.getElementById('content');
     const title = document.querySelector('.title');
     const menuToggle = document.getElementById('menu-toggle');
-    
     // Function to load startup content
     async function loadStartupContent() {
         try {
@@ -48,4 +47,22 @@ document.addEventListener('DOMContentLoaded', function() {
             menuToggle.checked = false;
         });
     });
+    
+});
+
+document.addEventListener('click', function(event) {
+    const linkList = document.querySelector('.link-list');
+    const menuToggle = document.getElementById('menu-toggle');
+    const burgerMenu = document.querySelector('.burger-menu');
+        
+    // If click is on burger menu or menu-toggle checkbox, don't do anything
+    if (burgerMenu.contains(event.target) || event.target === menuToggle) {
+        return;
+    }
+    
+    // If menu is open and click is outside both burger menu and link list
+    if (menuToggle.checked && !linkList.contains(event.target)) {
+        menuToggle.checked = false;
+        console.log('clicked outside');
+    }
 });

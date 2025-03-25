@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Oswald', sans-serif;
-    background-color: var(--color-background);
+    background-color: var(--color-accent);
     width: 100%;
     height: 100%;
 } 

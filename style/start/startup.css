@@ -1,10 +1,15 @@
 .intro-title {
-    margin: 2rem 0 0 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: var(--color-muted);
 }
 
 .intro-articles {
@@ -14,17 +19,33 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    margin: 2rem auto;
+    margin: 0 auto;
     justify-content: center;
     align-content: center;
     width: 100%;
     padding: 0 1rem;
     box-sizing: border-box;
     transition: max-width 0.2s ease-in-out;
+    flex: 1;
+}
+
+.intro-article-container {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+    gap: 2rem;
 }
 
 .intro-article {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     padding: 1.5rem;
     color: var(--color-primary);
     width: 100%;
@@ -36,10 +57,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: var(--color-text);
     transition: all 0.2s ease-in-out, max-width 0.3s ease-in-out;
     min-width: 300px;
     margin-bottom: 0.5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .intro-article:hover {
@@ -53,20 +79,71 @@
 }
 
 .intro-article-title {
-    width: 100%;
+    width: 80%;
     justify-content: center;
     justify-self: center;
     font-size: 1.7rem;
     margin-bottom: 1rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .intro-article-link {
-    color: var(--color-secondary);
-    text-decoration: none;
+    color: var(--color-text);
+    text-decoration: underline;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .intro-article-link:hover {
-    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.intro-article p {
+    width: 80%;
+    margin: 0;
+    text-align: left;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.notes-container {
+    color: var(--color-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.notes-container section {
+    width: 100%;
+    max-width: 1000px;
+    transition: all 0.3s ease-in-out, max-width 0.3s ease-in-out;
+}
+
+.notes-title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.notes-text {
+    line-height: 1.2;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 
@@ -81,6 +158,9 @@
     .intro-article-title {
         font-size: 1.5rem;
     }
+    .notes-container section {
+        max-width: 800px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -91,6 +171,9 @@
         margin: 0;
         max-width: 625px;
         margin-bottom: 0.5rem;
+    }
+    .notes-container section {
+        max-width: 625px;
     }
 }
 
@@ -118,6 +201,10 @@
     .intro-article-title, .intro-article p {
         padding: 0 auto;
     }
+    .notes-container section {
+        max-width: 475px;
+        padding: 0 1rem;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -127,5 +214,34 @@
     .intro-article {
         width: 100%;
         max-width: 300px;
+    }
+    .notes-container section {
+        max-width: 300px;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-height: 1100px) {
+
+    .intro-article {
+        height: 300px;
+    }
+    .intro-article-title {
+        font-size: 1.8rem;
+    }
+    .intro-article p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    .intro-article {
+        height: 350px;
+    }
+    .intro-article-title {
+        font-size: 2rem;
+    }
+    .intro-article p {
+        font-size: 1.5rem;
     }
 }

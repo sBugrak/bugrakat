@@ -4,7 +4,7 @@
     height: 70px;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-accent, #333);
+    background-color: var(--color-primary, #333);
     color: white;
     position: relative;
     flex-wrap: wrap;
@@ -51,7 +51,7 @@
 
 .title a {
     text-decoration: none;
-    color: var(--color-secondary, #fff);
+    color: var(--color-muted, #fff);
 }
 
 .link-list {
