@@ -75,7 +75,7 @@
 }
 
 .intro-article:hover .intro-article-link {
-    color: var(--color-muted);
+    color: var(--color-muted), #707070;
 }
 
 .intro-article-title {
@@ -144,8 +144,11 @@
     margin: 0;
     font-size: 1.2rem;
     font-weight: 300;
+} .notes-text a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color-text);
 }
-
 
 @media screen and (max-width: 1200px) {
     .intro-articles {
