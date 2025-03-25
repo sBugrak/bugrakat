@@ -1,0 +1,131 @@
+.intro-title {
+    margin: 2rem 0 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.intro-articles {
+    max-width: 2000px;
+    line-height: 1.2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    transition: max-width 0.2s ease-in-out;
+}
+
+.intro-article {
+    background-color: var(--color-accent);
+    padding: 1.5rem;
+    color: var(--color-primary);
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-text);
+    transition: all 0.2s ease-in-out, max-width 0.3s ease-in-out;
+    min-width: 300px;
+    margin-bottom: 0.5rem;
+}
+
+.intro-article:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-secondary);
+}
+
+.intro-article:hover .intro-article-link {
+    color: var(--color-muted);
+}
+
+.intro-article-title {
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.intro-article-link {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.intro-article-link:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .intro-articles {
+        max-width: 800px;
+    }
+    .intro-article {
+        width: 100%;
+        max-width: 800px;
+    }
+    .intro-article-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-articles {
+        max-width: 625px;
+    }
+    .intro-article {
+        margin: 0;
+        max-width: 625px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-title {
+        margin: 1rem 0;
+    }
+    .intro-articles {
+        flex-direction: column;
+        gap: 0rem;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 475px;
+    }
+    
+    .intro-article {
+        width: 100%;
+        max-width: 475px;
+        margin-bottom: 3px;
+    }
+    .intro-article:hover {
+        border-radius: 10px;
+    }
+
+    .intro-article-title, .intro-article p {
+        padding: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro-articles {
+        max-width: 300px;
+    }
+    .intro-article {
+        width: 100%;
+        max-width: 300px;
+    }
+}
