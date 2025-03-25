@@ -1,1 +1,1 @@
-[Bugra](https://bugrakat.ct.ws/)
+[BugraKat Website](https://bugrakat.ct.ws/)
