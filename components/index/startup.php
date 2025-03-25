@@ -2,8 +2,8 @@
 <h2 class="intro-title">A SIMPLE HABIT TRACKER</h2>
 <section class="intro-articles">
     <article class="intro-article">
-        <h3 class="intro-article-title">🏅 Feature Rich</h3>
-        <p>You can add your own habits and track them as you please. You can easily follow your progress by following easy to read visual graphs.</p>
+        <h3 class="intro-article-title">⏳ Easy To Use</h3>
+        <p>You can add your own habits and track them as you please. You can follow your progress by following easy to read visual graphs.</p>
     </article>
     <article class="intro-article">
         <h3 class="intro-article-title">🌍 Open source</h3>
