@@ -120,9 +120,8 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+    padding:2rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -135,16 +134,18 @@
 .notes-title {
     margin: 0;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .notes-text {
     line-height: 1.2;
     margin: 0;
-    font-size: 1.2rem;
-    font-weight: 300;
-} .notes-text a {
+    font-size: 1rem;
+    font-weight: normal;
+} 
+
+.notes-text a {
     cursor: pointer;
     text-decoration: underline;
     color: var(--color-text);

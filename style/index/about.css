@@ -1,0 +1,30 @@
+.about-container {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+}   
+.about-strong {
+    color: var(--color-primary), #000;
+}
+.about-link {
+    color: var(--color-secondary), #000;
+    text-decoration: underline;
+}
+.about-link:hover {
+    color: var(--color-background), #000;
+}
+.about-section {
+    line-height: 1.15;
+    display: inherit;
+    flex-direction: inherit;
+    justify-self: center;
+    margin: 2rem 0;
+    background-color: var(--color-muted);
+    width: 80%;
+    padding: 2rem;
+    border-radius: 1rem;
+}

@@ -7,7 +7,7 @@
     </article>
     <article class="intro-article">
         <h3 class="intro-article-title">🌍 Open source</h3>
-        <p>I'm hosting this website on <a target="_blank" rel="noopener noreferrer" class="intro-article-link" href="https://www.infinityfree.com/">InfinityFree</a>, and my whole page is open source. <span>SOURCE CODE WILL BE ADDED SOON</span></p>
+        <p>I'm hosting this website on <a target="_blank" rel="noopener noreferrer" class="intro-article-link" href="https://www.infinityfree.com/">InfinityFree</a>, and my whole page is open source. You can find my source code on <a target="_blank" rel="noopener noreferrer" class="intro-article-link" href="https://github.com/sBugrak/bugrakat">GitHub</a>.</p>
     </article>
     <article class="intro-article">
         <h3 class="intro-article-title">🕵️‍♂️ Private</h3>
@@ -23,7 +23,6 @@
 </section>
 <section>
     <h2 class="notes-title">Now What To Do?</h2>
-    <p class="notes-text">You should <a class="startup-link" onclick="loadContent('register')">Register</a> and <a class="startup-link" onclick="loadContent('enter')">Login</a> to start using the website. Until far in the future, the only purpose of this website is going to be tracking habits. I'll be focusing on that.</p>
+    <p class="notes-text">You should <a href="index.php?page=register"">Register</a> and <a href="index.php?page=enter">Login</a> to start using the website. Until far in the future, the only purpose of this website is going to be tracking habits. I'll be focusing on that.</p>
 </section>
 </div>
-<link rel="stylesheet" href="style/start/startup.css">
