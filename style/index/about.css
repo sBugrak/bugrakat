@@ -1,4 +1,5 @@
 .about-container {
+    width: 100%;
     color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -17,14 +18,58 @@
 .about-link:hover {
     color: var(--color-background), #000;
 }
+
 .about-section {
+    font-size: 1rem;
     line-height: 1.15;
     display: inherit;
     flex-direction: inherit;
     justify-self: center;
-    margin: 2rem 0;
+    margin: 1rem 2rem 0 2rem;
     background-color: var(--color-muted);
-    width: 80%;
+    max-width: 1000px;
     padding: 2rem;
     border-radius: 1rem;
+}
+.about-section h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+p{
+    letter-spacing: -0.03em;
+}
+
+.about-container:last-child {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-section {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-section {
+        width: 625px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .about-section {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-section {
+        width: 75%;
+    }
 }

@@ -15,7 +15,6 @@
     </article>
 </section>
 </div>
-
 <div class="notes-container">
 <section>
     <h2 class="notes-title">Important Notes</h2>

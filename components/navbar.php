@@ -11,7 +11,7 @@
     </label>
     <h1 class="title"><a href="index.php">ツ Bugkat</a></h1>
     <ul class="link-list">
-        <li><a href="index.php?page=about" class="nav-link">About Me</a></li>
+        <li><a href="index.php?page=about" class="nav-link">Blog</a></li>
         <li><a href="index.php?page=register" class="nav-link">Register</a></li>
         <li><a href="index.php?page=enter" class="nav-link">Enter</a></li>
     </ul>

@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/navbar.min.css">
+    <link rel="stylesheet" href="style/footer.css">
     <?php
     $page = $_GET['page'] ?? 'start';
-    // Load page-specific CSS
     $pageCSS = [
         'start' => 'style/index/startup.css',
         'about' => 'style/index/about.css',
